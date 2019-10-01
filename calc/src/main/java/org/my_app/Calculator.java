@@ -50,6 +50,8 @@ public double newCalculation(){
                     return Math.cos(num1);
                     case('3'): // sqrt
                     return Math.sqrt(num1);
+                    case('4'): // tan
+                    return Math.tan(num1);
                     default:
                     return newCalculation();
                 }
