@@ -18,17 +18,20 @@ public class Main{
         System.out.println();
         switch (choise){
             case (1):
-            System.out.println("Доступных операций нет");
+            System.out.println("Доступны следующие операции:");
+            System.out.println("1) sin (синус)");
+            System.out.println("2) cos (косинус)");
+            System.out.println("3) sqrt (квадратный корень)");
             calc = new Calculator(scan, true); //isSingle == true
             return calc;
 
             case (2):
             System.out.println("Доступны следующие операции:");
-            System.out.println("+ (сложение)");
-            System.out.println("- (вычитание)");
-            System.out.println("* (умножение)");
-            System.out.println("\\ (деление)");
-            System.out.println("% (вычисление процента)");
+            System.out.println(" + (сложение)");
+            System.out.println(" - (вычитание)");
+            System.out.println(" * (умножение)");
+            System.out.println(" / (деление)");
+            System.out.println(" % (вычисление процента)");
         
             calc = new Calculator(scan, false); //isSingle == false
             return calc;

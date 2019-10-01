@@ -15,6 +15,12 @@ public class DataSet extends SingleDataSet{
         num2 = number2;
     }
 
+    @Override
+    protected void readOperation() {
+        System.out.print("Введите операцию: ");
+        operation = scan.next().charAt(0);
+    }
+
     private void readNum2(){
         System.out.print("Введите второе число: ");
         num2 = scan.nextDouble();
