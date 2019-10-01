@@ -1,0 +1,6 @@
+[submodule "JavaAlgorithms"]
+	path = JavaAlgorithms
+	url = https://github.com/TheAlgorithms/Java
+[submodule "fastjson"]
+	path = fastjson
+	url = https://github.com/alibaba/fastjson
