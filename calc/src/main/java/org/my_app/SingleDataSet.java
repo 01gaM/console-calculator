@@ -42,7 +42,13 @@ public class SingleDataSet{
         return operation;
     }
 
+
+    //проверка для вычисления факториала
+    private boolean fractionalIsEmpty(double number){
+        return (number % 1) == 0;
+    }
+
     public boolean isOperationWrong(){
-        return (operation != '1' && operation != '2'  && operation != '3');   
+        return (operation == '4' && (!fractionalIsEmpty(num1) || num1 < 0) || operation != '1' && operation != '2'  && operation != '3' && operation != '4');   
     }
 }

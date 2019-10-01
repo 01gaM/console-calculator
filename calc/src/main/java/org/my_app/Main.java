@@ -22,6 +22,7 @@ public class Main{
             System.out.println("1) sin (синус)");
             System.out.println("2) cos (косинус)");
             System.out.println("3) sqrt (квадратный корень)");
+            System.out.println("4) ! (факториал для целых чисел)");
             calc = new Calculator(scan, true); //isSingle == true
             return calc;
 

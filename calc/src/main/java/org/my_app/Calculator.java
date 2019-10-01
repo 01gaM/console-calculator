@@ -37,6 +37,14 @@ public double newCalculation(){
     return calculate();
 }
 
+private long factorial(int number) {
+    long result = 1;
+    for (int factor = 2; factor <= number; factor++) {
+        result *= factor;
+    }
+    return result;
+}
+
     public double calculate(){
         if (isSingleDataSet && singleData.isOperationWrong() || !isSingleDataSet && data.isOperationWrong()){
            return newCalculation();
@@ -50,6 +58,8 @@ public double newCalculation(){
                     return Math.cos(num1);
                     case('3'): // sqrt
                     return Math.sqrt(num1);
+                    case('4'): // !
+                    return factorial((int)num1);
                     default:
                     return newCalculation();
                 }
