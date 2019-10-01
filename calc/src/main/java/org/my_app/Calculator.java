@@ -1,7 +1,7 @@
 package org.my_app;
 
 import java.util.Scanner;
-
+import java.lang.Math;
 
 public class Calculator {
     private DataSet data;
@@ -38,15 +38,22 @@ public double newCalculation(){
 }
 
     public double calculate(){
-        if (data.isOperationWrong()){
+        if (isSingleDataSet && singleData.isOperationWrong() || !isSingleDataSet && data.isOperationWrong()){
            return newCalculation();
         } else {
             if (isSingleDataSet){
                 double num1 = singleData.getNum1();
                 switch(singleData.getOperation()){
-                   
+                    case('1'): // sin
+                    return Math.sin(num1);
+                    case('2'): // cos
+                    return Math.cos(num1);
+                    case('3'): // sqrt
+                    return Math.sqrt(num1);
+                    default:
+                    return newCalculation();
                 }
-                return 0; //TODO: add single number operations
+
             } else {
                 double num1 = data.getNum1();
                 double num2 = data.getNum2();

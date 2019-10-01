@@ -33,8 +33,8 @@ public class SingleDataSet{
         return num1;
     }
 
-    private void readOperation() {
-        System.out.print("Введите операцию: ");
+    protected void readOperation() {
+        System.out.print("Введите номер операции: ");
         operation = scan.next().charAt(0);
     }
 
@@ -42,9 +42,7 @@ public class SingleDataSet{
         return operation;
     }
 
-
-    //TODO: change this function with new operations
     public boolean isOperationWrong(){
-        return false;        
+        return (operation != '1' && operation != '2'  && operation != '3');   
     }
 }
