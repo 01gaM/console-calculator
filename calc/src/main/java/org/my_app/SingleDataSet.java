@@ -24,7 +24,8 @@ public class SingleDataSet{
     }
 
     protected void readNum1(){
-        System.out.println("Введите число: ");
+        System.out.println();
+        System.out.print("Введите число: ");
         num1 = scan.nextDouble();
     }
 
@@ -32,8 +33,8 @@ public class SingleDataSet{
         return num1;
     }
 
-    private void readOperation() {
-        System.out.println("Введите операцию: ");
+    protected void readOperation() {
+        System.out.print("Введите номер операции: ");
         operation = scan.next().charAt(0);
     }
 
@@ -41,9 +42,7 @@ public class SingleDataSet{
         return operation;
     }
 
-
-    /*
     public boolean isOperationWrong(){
-        
-    }*/
+        return (operation != '1' && operation != '2'  && operation != '3');   
+    }
 }
