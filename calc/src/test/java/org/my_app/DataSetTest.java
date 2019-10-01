@@ -18,7 +18,7 @@ public class DataSetTest {
 
     @Test
     public void testUnknownOperation(){   //проверка на корректность выбранной операции
-        data = new DataSet(12, 4, '%');
+        data = new DataSet(12, 4, '$');
         assertEquals(data.isOperationWrong(), true);
     }
 }

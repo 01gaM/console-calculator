@@ -38,6 +38,8 @@ public double newCalculation(){
                 return num1*num2;
                 case('/'):
                 return num1/num2;
+                case('%'):
+                return num1*num2/100;
                 default:
                 return newCalculation();
             }
