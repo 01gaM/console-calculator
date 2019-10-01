@@ -53,6 +53,6 @@ public class DataSet{
     }
     
     public boolean isOperationWrong(){
-        return (operation == '/' && num2 == 0) || (operation != '+' && operation != '-'  && operation != '*'  && operation != '/');
+        return (operation == '/' && num2 == 0) || (operation != '+' && operation != '-'  && operation != '*'  && operation != '/' && operation != '%');
     }
 }
