@@ -1,3 +1,4 @@
+# Lab_1_2
 # console-calculator
 console-calculator - это простой консольный калькулятор на Java (проект из лабораторной работы 1).
 
